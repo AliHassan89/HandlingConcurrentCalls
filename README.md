@@ -25,7 +25,7 @@ there was only one customer service representative to start we would need to emp
 representative, to make sure that all customer calls are handled as soon as they arrive.
 
 
-#Solution:
+# Solution:
 1. Create a new array and mark entry time as positive and exit time as negative. The array will look like this
 ```
 list = {1481122000, -1481122020, 1481122000, -1481122040, 1481122030, -1481122035};
