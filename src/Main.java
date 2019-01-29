@@ -84,11 +84,7 @@ public class Main {
     private static class ChecksComparator implements Comparator<Integer> {
         @Override
         public int compare(Integer o1, Integer o2) {
-            int difference = Math.abs(o1) - Math.abs(o2);
-            if (difference == 0) {
-                return o2 - o1;
-            }
-            return difference;
+            return Math.abs(o1) - Math.abs(o2);
         }
     }
 
