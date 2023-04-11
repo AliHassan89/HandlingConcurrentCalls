@@ -38,6 +38,14 @@ list = {1481122000, 1481122000, -1481122020, 1481122030, -1481122035, -148112204
 ```
 
 3. One the array is sorted. Loop over the array adding to the counter when value is positive and subtracting when
-value is negative.
-
+value is negative. Keep track of maxCount the code will look like this:
+```
+        int maxNumber = Integer.MIN_VALUE;
+        for(int value : positiveInsAndNegativeOuts) {
+            currentNumberOfProcessors += value > 0 ? 1 : - 1;
+            if (currentNumberOfProcessors > maxNumber) {
+                maxNumber = currentNumberOfProcessors;
+            }
+        }
+```
 4. The function will return the maximum concurrent calls alive at any moment.
